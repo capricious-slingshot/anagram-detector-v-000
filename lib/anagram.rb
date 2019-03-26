@@ -9,6 +9,7 @@ class Anagram
     arr.select do |w|
 			if w.length == self.word.length
 	      x = w.split('').collect{|l| self.word.include?(l)}
+				p x
 				return w if x.length == self.word.length
 			end
 	  end
