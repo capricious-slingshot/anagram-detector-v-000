@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(arr)
-    arr.collect |w|
+    arr.collect |w| do
       w == self.word
 	  end
   end
