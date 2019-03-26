@@ -6,8 +6,11 @@ class Anagram
   end
 
   def match(arr)
-    arr.select do |w| 
-      w == self.word
+    arr.select do |w|
+			if w.length == self.word.length
+	      x = w.split('').collect{|l| self.word.include?(l)}
+				return x if x.length == self.word.length
+			end
 	  end
   end
 end
