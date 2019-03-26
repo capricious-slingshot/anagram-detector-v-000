@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(arr)
-    arr.map do |w| 
+    arr.select do |w| 
       w == self.word
 	  end
   end
