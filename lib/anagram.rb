@@ -1,4 +1,5 @@
 require 'pry'
+
 class Anagram
 	attr_reader :word
 
